@@ -69,7 +69,7 @@ void quick_sort(std::list<int>& intList)
 		{
 			i++;
 		}
-		while (*(j) > *(i))
+		while (*(j) < *(i))
 		{
 			j--;
 		}
@@ -79,7 +79,7 @@ void quick_sort(std::list<int>& intList)
 			*(i) = *(j);
 			*(j) = temp;
 		}
-		else if (*(i) < *(j))
+		else 
 		{
 			quick_sort(intList);
 		}
